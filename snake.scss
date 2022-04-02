@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container{
+    height: 100vh;
+    width:100%;
+    background-color: rgb(210, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .row{
+        height:500px;
+        width: 500px ;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(18,1fr);
+        grid-template-rows: repeat(18, 1fr);
+
+        .head{
+           background-color: red;
+        }
+        .food{
+            background-color: green;
+        }
+        .body{
+            background-color: orange;
+        }
+    }
+}
